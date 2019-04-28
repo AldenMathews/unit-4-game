@@ -29,3 +29,16 @@ function randomNumGems() {
         }
     };
 }
+
+var winLoss = function() {
+    if (yourScore > numberToGuess) {
+        alert("LOOOOOSSSEEERRRRRRR!!!")
+        losses++
+        $("#losses").text(losses);
+    }
+    else if (yourScore === numberToGuess) {
+        alert("Winner Winner!")
+        wins++
+        $("#wins").text(wins);
+    }
+};
